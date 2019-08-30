@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>panneaux</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <div class="flex-container">
+    <ion-item *ngFor="let item of items" (click)="onClickItem(item)">
+      <div>
+        <ion-thumbnail slot="start">
+          <ion-img [src]="item.image"></ion-img>
+        </ion-thumbnail>
+        <p style="font-size:8px">{{item.title}}</p>
+      </div>
+    </ion-item>
+    </div>
+  </ion-list>
+</ion-content>
