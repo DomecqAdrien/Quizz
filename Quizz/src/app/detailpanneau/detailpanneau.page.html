@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/panneaux"></ion-back-button>
+    </ion-buttons>
+    <ion-title>detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-img [src]="item.image"></ion-img>
+      <ion-card-title>{{item.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{item.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+

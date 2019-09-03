@@ -1,9 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>quizz</ion-title>
+    <ion-title>QuizQuestion</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <p>{{question.question}}</p>
+  <ion-img [src]="question.image"></ion-img>
+  <ion-list>
+    <ion-radio-group (ionChange)="onChange($event)">
+      <ion-item>
+        <ion-label>{{question.choix1}}</ion-label>
+        <ion-radio value="1"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{question.choix2}}</ion-label>
+        <ion-radio value="2"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{question.choix3}}</ion-label>
+        <ion-radio value="3"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>{{question.choix4}}</ion-label>
+        <ion-radio value="4"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="onValidate()">Valider</ion-button>
 </ion-content>
+

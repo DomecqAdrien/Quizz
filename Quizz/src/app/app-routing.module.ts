@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'panneaux', loadChildren: './panneaux/panneaux.module#PanneauxPageModule' },
   { path: 'quizz', loadChildren: './quizz/quizz.module#QuizzPageModule' },
   { path: 'detail', loadChildren: './detail/detail.module#DetailPageModule' },
-  { path: 'detail-panneau', loadChildren: './detail-panneau/detail-panneau.module#DetailPanneauPageModule' },
-  { path: 'detpan', loadChildren: './detpan/detpan.module#DetpanPageModule' }
+  { path: 'detailpanneau', loadChildren: './detailpanneau/detailpanneau.module#DetailpanneauPageModule' },
+  { path: 'resultat', loadChildren: './resultat/resultat.module#ResultatPageModule' }
 ];
 @NgModule({
   imports: [

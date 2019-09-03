@@ -8,12 +8,12 @@
 
   <ion-list>
     <div class="flex-container">
-    <ion-item *ngFor="let item of items" (click)="onClickItem(item)">
+    <ion-item *ngFor="let panneau of panneaux" (click)="onClickItem(panneau.id)">
       <div>
         <ion-thumbnail slot="start">
-          <ion-img [src]="item.image"></ion-img>
+          <ion-img [src]="panneau.image"></ion-img>
         </ion-thumbnail>
-        <p style="font-size:8px">{{item.title}}</p>
+        <p style="font-size:8px">{{panneau.title}}</p>
       </div>
     </ion-item>
     </div>
